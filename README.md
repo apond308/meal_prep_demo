@@ -1,15 +1,27 @@
-# FreshPrep - Meal Prep Service Website
+# Meal Prep Made Simple
 
-A proof of concept website for a meal prep service company featuring a blog-style layout and subscription plans.
+A proof of concept website for Jennifer Pond's meal prep coaching business, helping busy families eat nourishing meals with less stress.
+
+## About
+
+This website showcases Jennifer Pond's **Simple 3-Part Meal Prep System** for families:
+
+1. **Prep Ingredients, Not Recipes** - Mix-and-match building blocks
+2. **Cook Once, Mix & Match All Week** - Same ingredients, different meals
+3. **Same Meals, New Flavors** - Repeat formats, change sauces/spices
 
 ## Features
 
-- **Hero Section** - Eye-catching introduction with key statistics
-- **Blog Posts** - Latest articles with featured post highlighting
-- **Subscription Plans** - Three-tier pricing (Starter, Balance, Performance)
-- **Dietary Options** - Support for various dietary preferences
-- **Newsletter Signup** - Email subscription for updates
-- **Responsive Design** - Works on desktop, tablet, and mobile
+- **Hero Section** - Clear value proposition for busy families
+- **Problem/Solution** - Addresses common pain points
+- **The 3-Part System** - Core methodology explained
+- **Building Blocks** - Proteins, veggies, carbs, sauces formula
+- **Blog Section** - Tips, recipes, and inspiration
+- **Philosophy** - "Food is Medicine" and "Food is Connection"
+- **About Jennifer** - Credentials and personal story
+- **Lead Magnet** - Free guide download modal
+- **Newsletter Signup** - Email list building
+- **Responsive Design** - Works on all devices
 
 ## Running Locally
 
@@ -31,17 +43,18 @@ Then open http://localhost:8000 in your browser.
 
 ### Option 3: Open directly
 
-Simply open `index.html` in your web browser. Note: Some features may work better when served via HTTP.
+Simply open `index.html` in your web browser.
 
 ## File Structure
 
 ```
 meal_prep_demo/
-├── index.html    # Main HTML page
-├── styles.css    # All styling
-├── app.js        # JavaScript interactivity
-├── run.sh        # Local server script
-└── README.md     # This file
+├── index.html                        # Main HTML page
+├── styles.css                        # All styling
+├── app.js                            # JavaScript interactivity
+├── run.sh                            # Local server script
+├── Meal_Prep_Made_Simple_EBook.md    # Source content document
+└── README.md                         # This file
 ```
 
 ## Tech Stack
@@ -49,24 +62,23 @@ meal_prep_demo/
 - HTML5
 - CSS3 (Custom properties, Grid, Flexbox)
 - Vanilla JavaScript (No frameworks)
-- Google Fonts (Inter)
+- Google Fonts (Playfair Display, Inter)
 
-## Screenshots
+## Design Choices
 
-The website includes:
-- Navigation with mobile menu
-- Hero section with stats
-- Blog grid with featured post
-- Three-tier pricing cards
-- About section with features
-- Newsletter signup
-- Footer with links
+- **Warm color palette** - Orange primary (#d97706) for warmth and energy
+- **Navy secondary** (#1e3a5f) - Professional and trustworthy
+- **Green accents** (#059669) - Health and wellness
+- **Playfair Display** - Elegant serif for headings
+- **Inter** - Clean sans-serif for body text
 
 ## Next Steps (Production)
 
 For a production deployment, consider:
-- Backend integration for form submissions
-- Database for blog posts and subscriptions
-- Payment processing for plans
-- Email service integration
-- CMS for content management
+- Email marketing integration (ConvertKit, Mailchimp, etc.)
+- Blog CMS (Contentful, Sanity, or static site generator)
+- Analytics (Google Analytics, Plausible)
+- SEO optimization
+- Social media integration
+- Testimonials section
+- Actual eBook PDF delivery system
