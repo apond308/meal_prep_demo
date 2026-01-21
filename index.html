@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshPrep | Healthy Meal Prep Delivered</title>
+    <title>Meal Prep Made Simple | Jennifer Pond, M.S., CNS</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">FreshPrep</a>
+            <a href="#" class="logo">Meal Prep Made Simple</a>
             <ul class="nav-links">
+                <li><a href="#system">The System</a></li>
                 <li><a href="#blog">Blog</a></li>
-                <li><a href="#plans">Meal Plans</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#" class="btn btn-primary" onclick="openModal('subscribeModal')">Get Started</a></li>
+                <li><a href="#about">About Jennifer</a></li>
+                <li><a href="#" class="btn btn-primary" onclick="openModal('ebookModal')">Get Free Guide</a></li>
             </ul>
             <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
                 <span></span>
@@ -32,29 +32,161 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Healthy Eating Made Simple</h1>
-                <p>Fresh, chef-prepared meals delivered to your door. Save time, eat well, and feel amazing.</p>
+                <p class="hero-tagline">For Busy Families Who Want to Eat Well</p>
+                <h1>Nourishing Meals Without the Stress</h1>
+                <p class="hero-subtitle">A flexible meal prep system that fits your <em>real life</em>—not an ideal week. No hours in the kitchen. No eating the same thing all week. Just simple routines that actually work.</p>
                 <div class="hero-cta">
-                    <a href="#plans" class="btn btn-primary btn-lg">View Meal Plans</a>
-                    <a href="#blog" class="btn btn-outline btn-lg">Read Our Blog</a>
+                    <a href="#" class="btn btn-primary btn-lg" onclick="openModal('ebookModal')">Download Free Guide</a>
+                    <a href="#system" class="btn btn-outline btn-lg">See How It Works</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">10K+</span>
-                        <span class="stat-label">Happy Customers</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Weekly Recipes</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">4.9</span>
-                        <span class="stat-label">Average Rating</span>
-                    </div>
+                <div class="hero-trust">
+                    <p>Created by <strong>Jennifer Pond, M.S., CNS</strong></p>
+                    <span class="trust-divider">|</span>
+                    <p>Clinical Nutritionist & Mom of 4</p>
                 </div>
             </div>
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=500&fit=crop" alt="Healthy meal prep">
+                <img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&h=500&fit=crop" alt="Family meal prep with fresh ingredients">
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">😩</div>
+                    <h3>Sound familiar?</h3>
+                    <ul class="problem-list">
+                        <li>"What's for dinner?" stress every single day</li>
+                        <li>Too tired to cook after work</li>
+                        <li>Defaulting to takeout more than you'd like</li>
+                        <li>Meal prep guides that feel impossible to follow</li>
+                        <li>Wasting food (and money) every week</li>
+                    </ul>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">✨</div>
+                    <h3>There's a better way</h3>
+                    <ul class="solution-list">
+                        <li>A simple system that adapts to your schedule</li>
+                        <li>Prep once, eat well all week</li>
+                        <li>Variety without cooking from scratch daily</li>
+                        <li>More energy, better digestion, less stress</li>
+                        <li>Time back for what matters most</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3-Part System Section -->
+    <section id="system" class="system-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">The Method</p>
+                <h2>The Simple 3-Part System</h2>
+                <p class="section-subtitle">A flexible approach designed for real life—not perfection</p>
+            </div>
+            <div class="system-grid">
+                <div class="system-card">
+                    <div class="system-number">1</div>
+                    <h3>Prep Ingredients, Not Recipes</h3>
+                    <p>Instead of cooking five complete meals, prep a few mix-and-match <strong>building blocks</strong>: proteins, veggies, grains, and sauces. When the parts are ready, dinner becomes assembly—not cooking from scratch.</p>
+                    <div class="system-example">
+                        <span class="example-label">Example:</span>
+                        <span>Baked chicken + chopped veggies + cooked rice + 2 sauces = endless combinations</span>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <div class="system-number">2</div>
+                    <h3>Cook Once, Mix & Match All Week</h3>
+                    <p>One prep session turns into multiple meals. Use the same ingredients in different ways so it feels fresh, not repetitive. This saves time, money, and mental energy.</p>
+                    <div class="system-example">
+                        <span class="example-label">Example:</span>
+                        <span>Cooked chicken → tacos Monday, salad Tuesday, rice bowl Thursday</span>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <div class="system-number">3</div>
+                    <h3>Same Meals, New Flavors</h3>
+                    <p>Keep it interesting by repeating easy meal <strong>formats</strong> (bowls, tacos, salads, wraps) but changing the flavor with different sauces, spices, and toppings. Same base, new vibe.</p>
+                    <div class="system-example">
+                        <span class="example-label">Example:</span>
+                        <span>Bowl + teriyaki = Asian night. Bowl + salsa = Tex-Mex night.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Building Blocks Section -->
+    <section class="blocks-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">The Formula</p>
+                <h2>Your Building Blocks</h2>
+                <p class="section-subtitle">Prep these basics and you'll have options all week</p>
+            </div>
+            <div class="blocks-grid">
+                <div class="block-card">
+                    <div class="block-icon">🍗</div>
+                    <h4>3 Proteins</h4>
+                    <p>The foundation of every meal. Cook 2-3 proteins and dinner becomes assembly.</p>
+                    <ul class="block-examples">
+                        <li>Rotisserie chicken</li>
+                        <li>Baked chicken breast</li>
+                        <li>Ground turkey/beef</li>
+                        <li>Hard-boiled eggs</li>
+                        <li>Beans or lentils</li>
+                    </ul>
+                </div>
+                <div class="block-card">
+                    <div class="block-icon">🥦</div>
+                    <h4>3 Veggies</h4>
+                    <p>Washed, chopped, and ready to use. Fresh + frozen both count!</p>
+                    <ul class="block-examples">
+                        <li>Bell peppers & cucumbers</li>
+                        <li>Broccoli florets</li>
+                        <li>Cherry tomatoes</li>
+                        <li>Leafy greens (washed)</li>
+                        <li>Frozen stir-fry blend</li>
+                    </ul>
+                </div>
+                <div class="block-card">
+                    <div class="block-icon">🍚</div>
+                    <h4>3 Carbs</h4>
+                    <p>Whole grains and starches that give meals staying power.</p>
+                    <ul class="block-examples">
+                        <li>Brown rice</li>
+                        <li>Quinoa</li>
+                        <li>Sweet potatoes</li>
+                        <li>Whole grain pasta</li>
+                        <li>Tortillas or wraps</li>
+                    </ul>
+                </div>
+                <div class="block-card">
+                    <div class="block-icon">🫙</div>
+                    <h4>3 Sauces</h4>
+                    <p>The secret to variety. Same ingredients, totally different meals.</p>
+                    <ul class="block-examples">
+                        <li>Teriyaki or soy ginger</li>
+                        <li>Salsa or chipotle</li>
+                        <li>Pesto or Italian</li>
+                        <li>Tahini or hummus</li>
+                        <li>Simple vinaigrette</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="blocks-formula">
+                <div class="formula-item">Protein</div>
+                <div class="formula-plus">+</div>
+                <div class="formula-item">Fiber-Rich Carbs</div>
+                <div class="formula-plus">+</div>
+                <div class="formula-item">Healthy Fats</div>
+                <div class="formula-equals">=</div>
+                <div class="formula-result">Balanced Plate</div>
             </div>
         </div>
     </section>
@@ -63,65 +195,66 @@
     <section id="blog" class="blog-section">
         <div class="container">
             <div class="section-header">
-                <h2>Latest from Our Blog</h2>
-                <p>Tips, recipes, and inspiration for your healthy lifestyle</p>
+                <p class="section-label">From the Blog</p>
+                <h2>Tips, Recipes & Inspiration</h2>
+                <p class="section-subtitle">Practical guidance for feeding your family well</p>
             </div>
             <div class="blog-grid">
                 <article class="blog-card featured">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=500&fit=crop" alt="Meal prep containers">
-                        <span class="blog-tag">Featured</span>
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&h=500&fit=crop" alt="Meal prep containers with healthy food">
+                        <span class="blog-tag">Getting Started</span>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="date">Jan 20, 2026</span>
-                            <span class="category">Meal Prep Tips</span>
+                            <span class="category">Meal Prep Basics</span>
                         </div>
-                        <h3>The Ultimate Guide to Weekly Meal Prep</h3>
-                        <p>Learn how to plan, shop, and prep your meals for the entire week in just 2 hours. Save time and money while eating healthier than ever.</p>
-                        <a href="#" class="read-more">Read More &rarr;</a>
+                        <h3>Your First Meal Prep: A Step-by-Step Walkthrough</h3>
+                        <p>New to meal prep? Start here. I'll walk you through your first prep session—from planning your week to prepping your building blocks in 90 minutes or less.</p>
+                        <a href="#" class="read-more">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Healthy salad">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=300&fit=crop" alt="Colorful healthy bowl">
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="date">Jan 18, 2026</span>
-                            <span class="category">Recipes</span>
+                            <span class="category">Family Tips</span>
                         </div>
-                        <h3>5 High-Protein Lunch Ideas</h3>
-                        <p>Power through your afternoon with these delicious, protein-packed lunch recipes.</p>
-                        <a href="#" class="read-more">Read More &rarr;</a>
+                        <h3>Getting Picky Eaters to Try New Foods</h3>
+                        <p>Simple strategies that work—without pressure, bribes, or battles at the dinner table.</p>
+                        <a href="#" class="read-more">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop" alt="Kitchen cooking">
+                        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=400&h=300&fit=crop" alt="Cooking in kitchen">
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="date">Jan 15, 2026</span>
                             <span class="category">Nutrition</span>
                         </div>
-                        <h3>Understanding Macros: A Beginner's Guide</h3>
-                        <p>Everything you need to know about proteins, carbs, and fats for optimal health.</p>
-                        <a href="#" class="read-more">Read More &rarr;</a>
+                        <h3>Building Balanced Plates (Without Overthinking)</h3>
+                        <p>Protein + fiber-rich carbs + healthy fats. Here's how to make it simple and satisfying.</p>
+                        <a href="#" class="read-more">Read More →</a>
                     </div>
                 </article>
                 <article class="blog-card">
                     <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&h=300&fit=crop" alt="Fresh ingredients">
+                        <img src="https://images.unsplash.com/photo-1506484381205-f7945b73c1d1?w=400&h=300&fit=crop" alt="Grocery shopping">
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
                             <span class="date">Jan 12, 2026</span>
-                            <span class="category">Lifestyle</span>
+                            <span class="category">Budget</span>
                         </div>
-                        <h3>How Meal Prep Changed My Life</h3>
-                        <p>A customer story about transforming health habits through consistent meal planning.</p>
-                        <a href="#" class="read-more">Read More &rarr;</a>
+                        <h3>Grocery Shopping on a Budget</h3>
+                        <p>Smart strategies to eat healthy without breaking the bank. Plus my go-to shopping list.</p>
+                        <a href="#" class="read-more">Read More →</a>
                     </div>
                 </article>
             </div>
@@ -131,80 +264,24 @@
         </div>
     </section>
 
-    <!-- Meal Plans Section -->
-    <section id="plans" class="plans-section">
+    <!-- Philosophy Section -->
+    <section class="philosophy-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Choose Your Meal Plan</h2>
-                <p>Flexible plans to fit your lifestyle and goals</p>
-            </div>
-            <div class="plans-grid">
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3>Starter</h3>
-                        <p class="plan-tagline">Perfect for trying us out</p>
-                    </div>
-                    <div class="plan-price">
-                        <span class="price">$59</span>
-                        <span class="period">/week</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><span class="check">&#10003;</span> 6 meals per week</li>
-                        <li><span class="check">&#10003;</span> Choose from 20+ recipes</li>
-                        <li><span class="check">&#10003;</span> Free delivery</li>
-                        <li><span class="check">&#10003;</span> Pause or cancel anytime</li>
-                    </ul>
-                    <button class="btn btn-outline btn-block" onclick="selectPlan('Starter', '$59/week')">Select Plan</button>
+            <div class="philosophy-grid">
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">🌿</div>
+                    <h3>Food is Medicine</h3>
+                    <p>A powerful, everyday tool for healing and feeling your best. Simple meals can support steadier energy, better digestion, balanced hormones, and a body that feels good.</p>
                 </div>
-                <div class="plan-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="plan-header">
-                        <h3>Balance</h3>
-                        <p class="plan-tagline">Our most popular choice</p>
-                    </div>
-                    <div class="plan-price">
-                        <span class="price">$99</span>
-                        <span class="period">/week</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><span class="check">&#10003;</span> 12 meals per week</li>
-                        <li><span class="check">&#10003;</span> Choose from 40+ recipes</li>
-                        <li><span class="check">&#10003;</span> Priority delivery</li>
-                        <li><span class="check">&#10003;</span> Nutritionist consultation</li>
-                        <li><span class="check">&#10003;</span> Snack add-ons available</li>
-                    </ul>
-                    <button class="btn btn-primary btn-block" onclick="selectPlan('Balance', '$99/week')">Select Plan</button>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">💛</div>
+                    <h3>Food is Connection</h3>
+                    <p>It's one of the ways we slow down, care for each other, and come together as a family. Mealtime is about more than nutrition—it's about being present with the people you love.</p>
                 </div>
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3>Performance</h3>
-                        <p class="plan-tagline">For athletes & fitness enthusiasts</p>
-                    </div>
-                    <div class="plan-price">
-                        <span class="price">$149</span>
-                        <span class="period">/week</span>
-                    </div>
-                    <ul class="plan-features">
-                        <li><span class="check">&#10003;</span> 21 meals per week</li>
-                        <li><span class="check">&#10003;</span> Full recipe catalog access</li>
-                        <li><span class="check">&#10003;</span> Custom macro targets</li>
-                        <li><span class="check">&#10003;</span> Weekly check-ins</li>
-                        <li><span class="check">&#10003;</span> Protein shakes included</li>
-                    </ul>
-                    <button class="btn btn-outline btn-block" onclick="selectPlan('Performance', '$149/week')">Select Plan</button>
-                </div>
-            </div>
-            <div class="dietary-options">
-                <h4>Available Dietary Preferences</h4>
-                <div class="diet-tags">
-                    <span class="diet-tag">Vegetarian</span>
-                    <span class="diet-tag">Vegan</span>
-                    <span class="diet-tag">Keto</span>
-                    <span class="diet-tag">Paleo</span>
-                    <span class="diet-tag">Gluten-Free</span>
-                    <span class="diet-tag">Dairy-Free</span>
-                    <span class="diet-tag">Low-Carb</span>
-                    <span class="diet-tag">High-Protein</span>
+                <div class="philosophy-card">
+                    <div class="philosophy-icon">🎯</div>
+                    <h3>Simple & Sustainable</h3>
+                    <p>Everything stays flexible and realistic. This approach is designed to save time and mental load—not add more work. No perfection required, just a few go-to routines.</p>
                 </div>
             </div>
         </div>
@@ -214,50 +291,79 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="about-grid">
-                <div class="about-content">
-                    <h2>Why Choose FreshPrep?</h2>
-                    <p>We believe that eating healthy shouldn't be complicated or time-consuming. Our team of professional chefs and nutritionists work together to create delicious, balanced meals that help you reach your health goals.</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <div class="feature-icon">&#127860;</div>
-                            <div class="feature-text">
-                                <h4>Chef-Prepared</h4>
-                                <p>Every meal is crafted by our culinary team using premium ingredients.</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">&#128663;</div>
-                            <div class="feature-text">
-                                <h4>Fresh Delivery</h4>
-                                <p>Delivered fresh to your door in eco-friendly, insulated packaging.</p>
-                            </div>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon">&#128200;</div>
-                            <div class="feature-text">
-                                <h4>Macro-Balanced</h4>
-                                <p>Nutritionally optimized to support your fitness and wellness goals.</p>
-                            </div>
-                        </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=500&h=600&fit=crop" alt="Jennifer Pond">
+                    <div class="credentials-badge">
+                        <span>M.S., CNS</span>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=600&fit=crop" alt="Chef preparing meals">
+                <div class="about-content">
+                    <p class="section-label">Meet Your Guide</p>
+                    <h2>Hi, I'm Jennifer Pond</h2>
+                    <p class="credentials">Clinical Nutritionist | Certified Nutrition Specialist (CNS) | Holistic Nutritionist | Health Coach</p>
+                    <p>I'm a clinical nutritionist and mom of four. I understand the nonstop shuffle of work, school, sports, schedules, and trying to keep everyone fed.</p>
+                    <p>If you've wanted your family to eat healthier but felt overwhelmed by planning, cooking, and constant decisions—<strong>I get it.</strong></p>
+                    <p>I love cooking, but I don't have hours to spend in the kitchen, and I know you don't either. That's why I created this system: to give you simple, flexible routines that make nourishing, delicious meals easier to pull off in real life—even on your busiest weeks.</p>
+                    <div class="about-cta">
+                        <a href="#" class="btn btn-primary" onclick="openModal('ebookModal')">Get the Free Guide</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Section -->
+    <!-- What You'll Learn Section -->
+    <section class="learn-section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-label">Inside the Guide</p>
+                <h2>What You'll Learn</h2>
+                <p class="section-subtitle">Everything you need to start meal prepping for your family</p>
+            </div>
+            <div class="learn-grid">
+                <div class="learn-item">
+                    <div class="learn-check">✓</div>
+                    <p>A simple meal prep plan that works with <em>any</em> schedule</p>
+                </div>
+                <div class="learn-item">
+                    <div class="learn-check">✓</div>
+                    <p>How to map out your week in a calm, realistic way</p>
+                </div>
+                <div class="learn-item">
+                    <div class="learn-check">✓</div>
+                    <p>Time-saving shortcuts: what to prep, what to skip, what matters most</p>
+                </div>
+                <div class="learn-item">
+                    <div class="learn-check">✓</div>
+                    <p>Building balanced meals with protein, healthy fats, and smart carbs</p>
+                </div>
+                <div class="learn-item">
+                    <div class="learn-check">✓</div>
+                    <p>Flavor-first tips with herbs, spices, and quick upgrades</p>
+                </div>
+                <div class="learn-item">
+                    <div class="learn-check">✓</div>
+                    <p>Grocery and budget strategies that make healthy food realistic</p>
+                </div>
+            </div>
+            <div class="learn-cta">
+                <a href="#" class="btn btn-primary btn-lg" onclick="openModal('ebookModal')">Download the Free Guide</a>
+                <p class="learn-note">Join thousands of families eating better with less stress</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter/CTA Section -->
     <section class="newsletter-section">
         <div class="container">
             <div class="newsletter-content">
-                <h2>Stay Updated</h2>
-                <p>Get weekly recipes, health tips, and exclusive offers delivered to your inbox.</p>
+                <h2>Ready to Make Dinner Easier?</h2>
+                <p>Get weekly meal prep tips, simple recipes, and encouragement delivered straight to your inbox.</p>
                 <form class="newsletter-form" onsubmit="handleNewsletter(event)">
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
+                <p class="newsletter-note">No spam, ever. Unsubscribe anytime.</p>
             </div>
         </div>
     </section>
@@ -267,83 +373,72 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#" class="logo">FreshPrep</a>
-                    <p>Healthy eating made simple. Fresh, chef-prepared meals delivered to your door.</p>
+                    <a href="#" class="logo">Meal Prep Made Simple</a>
+                    <p>Helping busy families eat nourishing meals with less stress. Created by Jennifer Pond, M.S., CNS.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Quick Links</h4>
+                    <h4>Explore</h4>
                     <ul>
+                        <li><a href="#system">The System</a></li>
                         <li><a href="#blog">Blog</a></li>
-                        <li><a href="#plans">Meal Plans</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#about">About Jennifer</a></li>
+                        <li><a href="#">Free Guide</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Support</h4>
+                    <h4>Connect</h4>
                     <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Delivery Areas</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Pinterest</a></li>
                     </ul>
                 </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Twitter</a>
-                    </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 FreshPrep. All rights reserved.</p>
+                <p>&copy; 2026 Meal Prep Made Simple. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Subscribe Modal -->
-    <div id="subscribeModal" class="modal">
+    <!-- eBook Download Modal -->
+    <div id="ebookModal" class="modal">
         <div class="modal-content">
-            <button class="modal-close" onclick="closeModal('subscribeModal')">&times;</button>
-            <h2>Start Your Healthy Journey</h2>
-            <p>Enter your details to get started with FreshPrep</p>
-            <form onsubmit="handleSubscription(event)">
+            <button class="modal-close" onclick="closeModal('ebookModal')">&times;</button>
+            <div class="modal-header">
+                <h2>Get Your Free Guide</h2>
+                <p>Meal Prep for Real Life: Beginner's Guide to Nourishing & Delicious Meal Prepping for Families</p>
+            </div>
+            <form onsubmit="handleEbookDownload(event)">
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" id="subName" placeholder="John Doe" required>
+                    <label>First Name</label>
+                    <input type="text" id="ebookName" placeholder="Your first name" required>
                 </div>
                 <div class="form-group">
                     <label>Email Address</label>
-                    <input type="email" id="subEmail" placeholder="john@example.com" required>
+                    <input type="email" id="ebookEmail" placeholder="you@example.com" required>
                 </div>
                 <div class="form-group">
-                    <label>Selected Plan</label>
-                    <select id="subPlan">
-                        <option value="Starter">Starter - $59/week</option>
-                        <option value="Balance" selected>Balance - $99/week</option>
-                        <option value="Performance">Performance - $149/week</option>
+                    <label>What's your biggest meal prep challenge?</label>
+                    <select id="ebookChallenge">
+                        <option value="time">Not enough time</option>
+                        <option value="ideas">Running out of meal ideas</option>
+                        <option value="picky">Picky eaters in my family</option>
+                        <option value="planning">Trouble planning ahead</option>
+                        <option value="budget">Staying on budget</option>
+                        <option value="other">Something else</option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>Dietary Preferences</label>
-                    <div class="checkbox-group">
-                        <label class="checkbox-label">
-                            <input type="checkbox" value="Vegetarian"> Vegetarian
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" value="Vegan"> Vegan
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" value="Gluten-Free"> Gluten-Free
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" value="Dairy-Free"> Dairy-Free
-                        </label>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">Subscribe Now</button>
+                <button type="submit" class="btn btn-primary btn-block">Send Me the Guide</button>
+                <p class="form-note">You'll also receive weekly tips. Unsubscribe anytime.</p>
             </form>
         </div>
     </div>
@@ -351,9 +446,9 @@
     <!-- Success Modal -->
     <div id="successModal" class="modal">
         <div class="modal-content success-modal">
-            <div class="success-icon">&#10003;</div>
-            <h2>Welcome to FreshPrep!</h2>
-            <p id="successMessage">Thank you for subscribing. We'll send you a confirmation email shortly.</p>
+            <div class="success-icon">✓</div>
+            <h2>You're In!</h2>
+            <p id="successMessage">Check your inbox for your free guide. Let's make meal prep simple!</p>
             <button class="btn btn-primary" onclick="closeModal('successModal')">Got it!</button>
         </div>
     </div>

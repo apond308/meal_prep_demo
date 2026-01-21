@@ -1,4 +1,4 @@
-// FreshPrep - Meal Prep Service Website
+// Meal Prep Made Simple - Jennifer Pond
 // JavaScript for interactivity
 
 // Mobile Menu Toggle
@@ -42,48 +42,29 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Select Plan Function
-function selectPlan(planName, price) {
-    const planSelect = document.getElementById('subPlan');
-    if (planSelect) {
-        // Map plan names to select options
-        const planMap = {
-            'Starter': 'Starter',
-            'Balance': 'Balance',
-            'Performance': 'Performance'
-        };
-        planSelect.value = planMap[planName] || 'Balance';
-    }
-    openModal('subscribeModal');
-}
-
-// Handle Subscription Form
-function handleSubscription(event) {
+// Handle eBook Download Form
+function handleEbookDownload(event) {
     event.preventDefault();
 
-    const name = document.getElementById('subName').value;
-    const email = document.getElementById('subEmail').value;
-    const plan = document.getElementById('subPlan').value;
+    const name = document.getElementById('ebookName').value;
+    const email = document.getElementById('ebookEmail').value;
+    const challenge = document.getElementById('ebookChallenge').value;
 
-    // Get selected dietary preferences
-    const checkboxes = document.querySelectorAll('.checkbox-group input:checked');
-    const preferences = Array.from(checkboxes).map(cb => cb.value);
-
-    // Log subscription data (in production, this would be sent to a server)
-    console.log('New Subscription:', {
+    // Log signup data (in production, this would be sent to an email service)
+    console.log('New eBook Download Request:', {
         name,
         email,
-        plan,
-        preferences
+        challenge,
+        timestamp: new Date().toISOString()
     });
 
-    // Close subscribe modal and show success
-    closeModal('subscribeModal');
+    // Close ebook modal and show success
+    closeModal('ebookModal');
 
     // Update success message
     const successMessage = document.getElementById('successMessage');
     if (successMessage) {
-        successMessage.textContent = `Thanks ${name}! You've subscribed to the ${plan} plan. Check your email at ${email} for next steps.`;
+        successMessage.textContent = `Thanks, ${name}! Check your inbox at ${email} for your free guide. Let's make meal prep simple!`;
     }
 
     openModal('successModal');
@@ -99,13 +80,16 @@ function handleNewsletter(event) {
     const emailInput = event.target.querySelector('input[type="email"]');
     const email = emailInput.value;
 
-    // Log newsletter signup (in production, this would be sent to a server)
-    console.log('Newsletter Signup:', email);
+    // Log newsletter signup (in production, this would be sent to an email service)
+    console.log('Newsletter Signup:', {
+        email,
+        timestamp: new Date().toISOString()
+    });
 
     // Show success message
     const successMessage = document.getElementById('successMessage');
     if (successMessage) {
-        successMessage.textContent = `You're subscribed! We'll send weekly recipes and tips to ${email}.`;
+        successMessage.textContent = `You're subscribed! Weekly meal prep tips are on their way to ${email}.`;
     }
 
     openModal('successModal');
@@ -146,29 +130,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
+// Navbar shadow on scroll
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
     } else {
         navbar.style.boxShadow = 'none';
     }
 });
 
-// Animation on scroll (simple implementation)
+// Animation on scroll
 function animateOnScroll() {
-    const elements = document.querySelectorAll('.blog-card, .plan-card, .feature');
+    const elements = document.querySelectorAll('.system-card, .block-card, .blog-card, .philosophy-card, .learn-item');
 
     elements.forEach(element => {
         const rect = element.getBoundingClientRect();
-        const isVisible = rect.top < window.innerHeight - 100;
+        const isVisible = rect.top < window.innerHeight - 80;
 
-        if (isVisible) {
+        if (isVisible && !element.classList.contains('animated')) {
+            element.classList.add('animated');
             element.style.opacity = '1';
-            element.style.transform = element.classList.contains('plan-card') && element.classList.contains('popular')
-                ? 'scale(1.05)'
-                : 'translateY(0)';
+            element.style.transform = 'translateY(0)';
         }
     });
 }
@@ -176,19 +159,12 @@ function animateOnScroll() {
 // Initialize animations
 document.addEventListener('DOMContentLoaded', function() {
     // Set initial states for animation
-    const animatedElements = document.querySelectorAll('.blog-card, .plan-card:not(.popular), .feature');
-    animatedElements.forEach(element => {
+    const animatedElements = document.querySelectorAll('.system-card, .block-card, .blog-card, .philosophy-card, .learn-item');
+    animatedElements.forEach((element, index) => {
         element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        element.style.transform = 'translateY(30px)';
+        element.style.transition = `opacity 0.5s ease ${index * 0.05}s, transform 0.5s ease ${index * 0.05}s`;
     });
-
-    // Popular plan card special handling
-    const popularCard = document.querySelector('.plan-card.popular');
-    if (popularCard) {
-        popularCard.style.opacity = '0';
-        popularCard.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    }
 
     // Trigger initial animation check
     setTimeout(animateOnScroll, 100);
@@ -198,6 +174,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Console welcome message
-console.log('%cFreshPrep', 'color: #22c55e; font-size: 24px; font-weight: bold;');
-console.log('%cHealthy Eating Made Simple', 'color: #64748b; font-size: 14px;');
-console.log('This is a proof of concept website. In production, form data would be sent to a backend server.');
+console.log('%cMeal Prep Made Simple', 'color: #d97706; font-size: 20px; font-weight: bold;');
+console.log('%cby Jennifer Pond, M.S., CNS', 'color: #1e3a5f; font-size: 14px;');
+console.log('%cNourishing meals without the stress', 'color: #6b7280; font-size: 12px; font-style: italic;');
+console.log('');
+console.log('This is a proof of concept website. In production, form submissions would connect to an email marketing service.');
